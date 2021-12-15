@@ -1,0 +1,154 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height = "match_parent"
+ android:background="@drawable/backgroud_app"
+    android:id="@+id/loginForm"
+ tools:context = ".loginPage">
+
+<TextView android:text = "Login"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_height = "wrap_content"
+    android:id = "@+id/textviewLogin"
+    android:textSize = "35dp"
+    android:layout_alignParentTop = "true"
+    android:layout_centerHorizontal = "true"
+    android:textColor="#556b2f"/>
+
+<TextView
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:text = "Calculator App"
+    android:id = "@+id/textViewName"
+    android:layout_below = "@+id/textviewLogin"
+    android:layout_centerHorizontal = "true"
+    android:textColor = "#1e90ff"
+    android:textSize = "35dp" />
+
+<EditText
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:id = "@+id/editTextUsername"
+    android:hint = "Enter Username"
+    android:focusable = "true"
+    android:textColorHighlight = "#ff7eff15"
+    android:textColorHint = "#228b22"
+    android:layout_marginTop = "46dp"
+    android:layout_marginHorizontal="50dp"
+    android:layout_below = "@+id/imageViewIcon"
+    android:layout_alignParentLeft = "true"
+    android:layout_alignParentStart = "true"
+    android:layout_alignParentRight = "true"
+    android:layout_alignParentEnd = "true"
+    android:textColor="#000000"
+    android:textStyle="bold"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageViewIcon"
+    android:layout_marginTop="10dp"
+    android:adjustViewBounds="true"
+    android:maxWidth="400dp"
+    android:maxHeight="120dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/login_logo"
+    android:layout_below="@+id/textViewName"
+    android:layout_centerHorizontal="true" />
+
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/editTextPassword"
+    android:layout_marginTop="30dp"
+    android:layout_marginHorizontal="50dp"
+    android:layout_below="@+id/editTextUsername"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentRight = "true"
+    android:layout_alignParentEnd = "true"
+    android:textColorHint="#228b22"
+    android:hint="Password"
+    android:textColor="#000000"
+    android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account ? Click on Sign Up"
+        android:padding="30dp"
+        android:textSize="15dp"
+        android:id="@+id/signInhelp"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="140dp"
+        android:layout_centerHorizontal = "true"
+        android:textColor="#cd5c5c"/>
+
+
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:text="Login"
+    android:id="@+id/buttonLogin"
+    android:layout_below="@id/editTextPassword"
+    android:layout_marginTop="60dp"
+    android:layout_toLeftOf="@+id/textviewLogin"
+    android:layout_toStartOf="@+id/textviewLogin"
+    android:onClick="haveAccess"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:text="Sign Up"
+    android:id="@+id/buttonSignUp"
+    android:layout_below="@+id/editTextPassword"
+    android:layout_marginTop="60dp"
+    android:layout_toRightOf="@+id/textviewLogin"
+    android:layout_toEndOf="@+id/textviewLogin"
+    android:onClick="goRegister"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/person"
+        android:adjustViewBounds="true"
+        android:maxWidth="50dp"
+        android:maxHeight="35dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="left"
+        android:layout_marginTop="305dp"
+        android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lock"
+            android:adjustViewBounds="true"
+            android:maxWidth="50dp"
+            android:maxHeight="40dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
